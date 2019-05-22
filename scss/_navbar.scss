@@ -12,6 +12,10 @@
             color: darken($theme-primary, 10%);
         }
     }
+    .logo{
+      width: 100px;
+      height: auto;
+    }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
@@ -51,9 +55,9 @@
         }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
-            color: fade-out(white, .3);
+            color: fade-out($theme-primary, .3);
             &:hover {
-                color: white;
+                color: $theme-secondary;
             }
         }
         &.navbar-shrink {

@@ -7,6 +7,10 @@ section.download {
         margin-top: 0;
     }
     .badges {
+      > div {
+        max-width: calc(100% / 3 - 30px;);
+        margin: 0 15px;
+      }
         .badge-link {
             display: block;
             margin-bottom: 25px;
