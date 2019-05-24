@@ -1,0 +1,14 @@
+#planos{
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .row > div[class*='col-'] {
+    display: flex;
+  }
+
+  .card{
+    border-radius: 30px;
+  }
+}
