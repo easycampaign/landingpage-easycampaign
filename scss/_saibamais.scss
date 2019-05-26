@@ -1,13 +1,22 @@
-.saibamais_txt {
-  .saibamais-form{
-    margin-top: 100px;
-    
-    form{
-      max-width: 435px;
-      padding: 32px;
-      border-radius: 30px;
-      box-shadow: 0 13px 32px rgba(149, 149, 149, 0.2);
-      margin: 0 auto;
-    }
-  }
+section.saibamais {
+	.saibamais_txt{
+		img.saibamais_vetor{
+			width: 100%;
+		}
+	}
+	.saibamais-form{
+		margin-top: 100px;
+
+		form{
+			max-width: 435px;
+			padding: 32px;
+			border-radius: 30px;
+			box-shadow: 0 13px 32px rgba(149, 149, 149, 0.2);
+			margin: 0 auto;
+
+			.btn{
+				width: 100%;
+			}
+		}
+	}
 }

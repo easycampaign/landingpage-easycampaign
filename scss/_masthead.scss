@@ -1,37 +1,68 @@
 // Styling for the masthead
 header.masthead {
-    position: relative;
+	position: relative;
+	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 0;
+	color: black;
+	.header-content {
+		margin-bottom: 100px;
+		text-align: center;
+		h1 {
+			font-size: 30px;
+		}
 
-    width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    color: black;
-  background-image: url(../img/next-features.png);
-  background-position: right;
-  background-repeat: no-repeat;
-    .header-content {
-        margin-bottom: 100px;
+		form.first-cta{
+			display: inline-block;
+			width: 100%;
 
-        text-align: center;
-        h1 {
-            font-size: 30px;
-        }
-    }
-    @media (min-width: 992px) {
-        height: 100vh;
-        min-height: 775px;
-        padding-top: 0;
-        padding-bottom: 0;
-        .header-content {
-            margin-bottom: 0;
+			.form-group{
+				display: flex;
+				width: 100%;
 
-            text-align: left;
-            h1 {
-                font-size: 50px;
-            }
-        }
-        .device-container {
-            max-width: 325px;
-        }
-    }
+				input:text{
+					border-radius: 5px 0 0 5px;
+				}
+
+				.btn{
+					border-radius: 0 5px 5px 0;
+				}
+			}
+		}
+	}
+
+	.mobile-image{
+		width: 100%;
+		height: auto;
+	}
+
+	@media (min-width: 768px) {
+		height: 100vh;
+		min-height: 775px;
+		padding-top: 0;
+		padding-bottom: 0;
+		background-image: url(../img/next-features@2x.png);
+		background-repeat: no-repeat;
+		background-size: 60%;
+		background-position: right;
+		.header-content {
+			margin-bottom: 0;
+
+			text-align: left;
+			h1 {
+				font-size: 35px;
+			}
+		}
+	}
+	@media (min-width: 574px) and (max-width: 768px) {
+		.container{
+			margin: 0;
+			max-width: none;
+
+			.header-content{
+				margin: 0 auto;
+				width: 80%;
+			}
+		}	
+	}
 }

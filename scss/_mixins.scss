@@ -1,85 +1,85 @@
 // Mixins
 @mixin transition-all() {
-  -webkit-transition: all .35s;
-  -moz-transition: all .35s;
-  transition: all .35s;
+	-webkit-transition: all .35s;
+	-moz-transition: all .35s;
+	transition: all .35s;
 }
 
 @mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 @mixin button-variant($color, $background, $border) {
-  color: $color;
-  border-color: $border;
-  background-color: $background;
-  &:focus,
-  &.focus {
-    color: $color;
-    border-color: darken($border, 25%);
-    background-color: darken($background, 10%);
-  }
-  &:hover {
-    color: $color;
-    border-color: darken($border, 12%);
-    background-color: darken($background, 10%);
-  }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    color: $color;
-    border-color: darken($border, 12%);
-    background-color: darken($background, 10%);
-    &:hover,
-    &:focus,
-    &.focus {
-      color: $color;
-      border-color: darken($border, 25%);
-      background-color: darken($background, 17%);
-    }
-  }
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &:hover,
-    &:focus,
-    &.focus {
-      border-color: $border;
-      background-color: $background;
-    }
-  }
-  .badge {
-    color: $background;
-    background-color: $color;
-  }
+	color: $color;
+	border-color: $border;
+	background-color: $background;
+	&:focus,
+	&.focus {
+		color: $color;
+		border-color: darken($border, 25%);
+		background-color: darken($background, 10%);
+	}
+	&:hover {
+		color: $color;
+		border-color: darken($border, 12%);
+		background-color: darken($background, 10%);
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		color: $color;
+		border-color: darken($border, 12%);
+		background-color: darken($background, 10%);
+		&:hover,
+		&:focus,
+		&.focus {
+			color: $color;
+			border-color: darken($border, 25%);
+			background-color: darken($background, 17%);
+		}
+	}
+	&:active,
+	&.active,
+	.open > &.dropdown-toggle {
+		background-image: none;
+	}
+	&.disabled,
+	&[disabled],
+	fieldset[disabled] & {
+		&:hover,
+		&:focus,
+		&.focus {
+			border-color: $border;
+			background-color: $background;
+		}
+	}
+	.badge {
+		color: $background;
+		background-color: $color;
+	}
 }
 
 @mixin heading-font {
-  font-family: 'Poppins-SemiBold', 'sans-serif';
-  font-weight: 900;
-  letter-spacing: 1px;
+	font-family: 'Poppins-Bold', 'sans-serif';
+	letter-spacing: 1px;
 }
 
 @mixin body-font {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+	font-family: 'Roboto-Regular', 'Helvetica', 'Arial', 'sans-serif';
 }
 
 @mixin alt-font {
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
-  letter-spacing: 2px;
-  text-transform: uppercase;
+	font-family: 'Poppins-Regular', 'sans-serif';
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
 
 @mixin ferramenta {
-  position: relative;
-  padding: 250px 0;
-  background-repeat: no-repeat;
+	position: relative;
+	padding: 200px 0;
+	background-repeat: no-repeat;
+	background-size: 60%;
 }

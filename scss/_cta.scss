@@ -1,11 +1,29 @@
-// Styling for the call to action section
-div.dashboard {
-    @include ferramenta;
-    background-image: url('../img/dashboard.png');
-    background-position: right;
-}
-div.macro-campanhas {
-    @include ferramenta;
-    background-image: url('../img/acompanhamento.png');
-    background-position: left;
+section.ferramenta{
+	.mobile-image{
+		width: 100%;
+		height: auto;
+		margin: $margin-space 0;
+	}
+	div.dashboard, div.macro-campanhas {
+		padding: 50px 0;
+	}
+	@media (min-width: 992px) {
+		div.dashboard {
+			@include ferramenta;
+			background-image: url('../img/dashboard.png');
+			background-position: right;
+			background-size: 50%;
+		}
+		div.macro-campanhas {
+			@include ferramenta;
+			background-image: url('../img/acompanhamento.png');
+			background-position: left;
+			background-size: 50%;
+		}
+	}
+	@media (max-width: 1200px) {
+		div.dashboard, div.macro-campanhas {
+			padding: 80px 0;
+		}
+	}
 }

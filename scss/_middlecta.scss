@@ -1,0 +1,21 @@
+// Styling for the features section
+section.middle-cta {
+	.trinta-dias{
+		padding: 32px;
+		border-top: 10px $gray-lighter solid;
+		border-bottom: 10px $gray-lighter solid;
+
+		.btn{
+			width: 100%;
+		}
+	}
+	.section-heading {
+		margin-bottom: 100px;
+		h2 {
+			margin-top: 0;
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+}
