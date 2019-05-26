@@ -333,7 +333,7 @@ section.whyEasy .badges .badge-link img {
 }
 
 section.whyEasy iframe {
-  display: none;
+  max-width: calc(100vw - 100px);
 }
 
 @media (min-width: 992px) {
